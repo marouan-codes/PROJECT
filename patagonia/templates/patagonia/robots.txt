@@ -1,0 +1,13 @@
+User-Agent: *
+Disallow: /admin/
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Gemeni
+Disallow: /
+
+User-agent: BadBot
+Disallow: /
+
+sitemap:https://www.webstooone.com/sitemap.xml

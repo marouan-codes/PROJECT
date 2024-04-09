@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="" content="creation de site web maroc, web design agence au Maroc"></meta>
+    <meta name="description" content="Agence de creation des Sites Web au Maroc pour les entreprises qui cherchent à améliorer leur présence en ligne et à attirer des clients de grande valeur ">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon-logo.svg' %}">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <title>دليل مواقع لزيادة إنتاجية عملك وأعمالك الشخصية</title>
+</head>
+<link rel="stylesheet" href=" {% static 'css/blog.css' %} ">
+<body>
+    <nav class="navigation">
+        <a href="{% url 'index' %}"><img src="{% static 'images/logo.svg' %}" alt="logo"></a>
+        <div class="menu">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+        <a href="" class="consultation" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marouan-kaboul/consultation-call'});return false;">Get your Free 20 min Consultation</a>
+
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <h1>دليلك لإيجاد مواقع لزيادة إنتاجية عملك وأعمالك الشخصية.</h1>
+        <p>لقد جمعنا أكثر من 50 موقع قد تجدها مفيدة لحل مشكلة لديك.
+            نضيف 5 مواقع كل يوم!</p>
+        <div>
+            <img src="{% static 'images/adat.webp' %}" alt="">
+        </div>
+    </section>
+    <section class="websites">
+        <div class="filter"></div>
+        <div>
+        {% for tool in adat %}
+            <div class="card">
+                    
+                <img class= "imgblog" src="{{tool.adatimage.url}}" alt="">
+                    <div class="bottom">
+                        <span>{{tool.tag}}</span>
+                        <h3>{{tool.h1_title}}</h3>
+                        <p>{{tool.meta_description|slice:":120"}}</p>
+                        <a href="{{tool.website}}">visit website</a>
+                    </div>      
+                            
+            </div>
+        {% endfor %}
+        </div>
+    </section>
+
+</body>
+</html>

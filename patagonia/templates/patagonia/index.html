@@ -1,0 +1,416 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="" content="creation de site web maroc, web design agence au Maroc"></meta>
+    <meta name="description" content="Agence de creation des Sites Web au Maroc pour les entreprises qui cherchent à améliorer leur présence en ligne et à attirer des clients de grande valeur ">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon-logo.svg' %}">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <title>Home | Webstooone.</title>
+</head>
+<link rel="stylesheet" href=" {% static 'css/style.css' %} ">
+<body>
+    <nav class="navigation">
+        <a href="{% url 'index' %}"><img src="{% static 'images/logo.svg' %}" alt="logo"></a>
+        <div class="menu">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+        <a href="" class="consultation" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marouan-kaboul/consultation-call'});return false;">Get your Free 20 min Consultation</a>
+
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <div class="left-side">
+            <h1> Web design Agency in Morocco</h1>
+            <h2>Websites for Businesses that look to better their online presence and attract high value Customers.</h2>
+            <p>Web design agency that focuses on creating websites for B2B & B2C businesses</p>
+            <div class="buttons">
+                <a href="" class="consultation" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marouan-kaboul/consultation-call'});return false;">Get your Free 20 min Consultation</a>
+                <a class="Pricing" href=" #pricingsection ">See Pricing</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="{% static 'images/hero-image.webp' %}" alt="">
+        </div>      
+    </section>
+    <!-- hero section end -->
+    <!-- logo section start-->
+    <section class="social-proof-logo ">
+        <p>May I add you to the list?</p>
+        <div class="logos">
+            <img class="logo1" src="{% static 'images/cagp-logo.svg' %}" alt="cagp logo">
+            <img class="logo2" src="{% static 'images/valorapack-logo.svg' %}" alt="">
+        </div>
+    </section>
+    <!-- logo section end -->
+
+    <!-- paragraphe section start -->
+    <section class="paragraphe">
+        <div class="texte">
+            <h2>Tired of wasting $ on a shitty website, to have no results? </h2>
+            <p>Let's be honest! Most web design agencies fail to deliver good work according to what they ask. <br>
+                Some of them use pre-made templates (I know a lot of them), <br>
+                while others know how to code it, and that's it. <br>
+                But a website in itself is useless; your neighbor's nephew can do it for 20% of the price. <br>
+                That's why, as a business owner, you need to know more information to not get screwed. <br>
+                
+                To avoid these pitfalls and make an informed decision, here are key factors to consider when choosing a web design agency:<br>
+                
+                - Their process of work<br>
+                - Do they have a team (Copywriter, UI/UX designer, developer, IT person)<br>
+                - Do they assist with personalization strategies?<br>
+                - Who will own the website after its completion?<br>
+                - Do they offer maintenance? If yes, what are the things included in it?<br>
+                
+                You would be surprised if I told you that 'maintenance fees' are completely worthless 99% of the time,<br>
+                but companies will stay with them because they fear their site will go down without it.<br>
+                It's all about making a website that plays a role in your marketing strategies.<br>
+                
+                That's why we are a marketing agency. We build websites as tools to:<br>
+                <div class="tick">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="chek"><path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path></svg>
+                    <p>Strengthen The Perception Of The Brand</p>
+                </div>
+                <div class="tick">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="chek"><path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path></svg>
+                    <p>Improve the conversion of prospects (sales)</p>
+                </div>
+                <div class="tick">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="chek"><path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path></svg>
+                    <p>Improve The Retention Of Website Visitors</p>
+                </div>
+                <div class="tick">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="chek"><path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path></svg>
+                    <p>Improve lead generation</p>
+                </div>
+                <div class="tick">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="chek"><path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path></svg>
+                    <p>Increase Organic Traffic</p>
+                </div>
+                <div class="tick">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="chek"><path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path></svg>
+                    <p>Improve Brand Awareness</p>
+                </div>
+                
+                <P style="margin: 0px;">If you are interested, feel free to reach out.</P>
+            </p>
+        </div>
+        <!-- <div class="calender">
+            <img src="{% static 'images/calender.webp' %}" alt="">
+        </div> -->
+    </section>
+    <!-- paragraphe section end -->
+
+    <!-- work section start-->
+    <section class="worke">
+        <div>
+            <h2 class="titlework">Work</h2>
+        </div>
+
+        <div class="imagesofportfolio">
+            {% for portfolio in portfolios %}
+            {%if forloop.counter <= 2 %}
+                <a href="{% url 'portfoliopage' portfolio.slug %}">
+                    <img class= "imgwork" src="{{portfolio.siteimages.url}}" alt="">
+                </a>
+            {% endif %}
+            {% endfor %}                            
+        </div>
+    </section>
+
+    <!-- work section end -->
+    <!-- why us section start -->
+
+
+    <section class="whyus">
+        <div>
+            <h2 class="titlewhyus">Why Us</h2>
+        </div>
+        <div class="container">
+            <div class="reason">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector" d="M0 0V32H32.1412V0H0ZM2.92193 2.90909H29.2193V29.0909H2.92193V2.90909ZM20.6932 7.27557C18.8188 7.27557 18.1764 8.60968 18.1764 9.50568V11.8835C18.1764 13.0908 18.8369 14.2443 20.5448 14.2443C23.4112 14.2414 23.0644 12.082 23.0644 10.5824H20.8244V11.3693H22.1456C22.1456 12.5402 21.5952 13.3267 20.5476 13.3267C19.7207 13.3267 19.2436 12.6126 19.2436 11.625V9.65057C19.2436 8.73566 20.1059 8.20739 20.6932 8.20739C21.7407 8.20739 22.1427 9.12216 22.1427 9.12216L22.9331 8.59091C22.9331 8.59091 22.5486 7.27557 20.6932 7.27557ZM12.5409 11.7699C11.2187 11.7699 9.19961 11.8966 7.30767 11.8239V12.4091C8.44722 12.6287 8.92272 12.5182 8.92272 14.1648V22.2102C8.92272 23.8742 8.44576 23.7463 7.30767 23.9659V24.571C7.85845 24.5521 8.81145 24.4972 9.78446 24.4972C10.7034 24.4972 11.8982 24.5347 12.4125 24.571V23.9659C10.9427 23.7652 10.5007 23.9295 10.5007 22.2102V18.8097C10.9974 18.846 11.4211 18.8438 12.0815 18.8438C13.3306 21.075 14.5238 22.7415 15.2031 23.5284C16.4333 25.0091 18.4006 24.7907 18.8784 24.571V24.0227C18.1435 24.0213 17.4071 23.5279 16.8753 22.9432C15.9753 21.9745 14.7627 20.4009 13.7707 18.6278C15.4245 18.2249 16.6555 16.671 16.6555 15.1335C16.6555 12.8295 14.8726 11.7699 12.5409 11.7699ZM12.1557 12.6989C13.8825 12.6989 14.9092 13.5949 14.9092 15.2415C14.9078 16.8531 13.8066 17.929 11.9702 17.929C11.2908 17.929 10.9784 17.9114 10.5007 17.875V12.7528C10.9784 12.6976 11.6034 12.6989 12.1557 12.6989Z" fill="black"/>
+                    </svg>
+                <h3>Understanding your needs</h3>
+                <p>To create an effective website that solves your problem, we must first understand your business, through:
+                    <br> Workshops and Market analyses.</p>
+            </div>
+            <div class="reason">
+                <img src="{% static 'images/industry.svg' %}" alt="">
+                <h3>The use of best practices</h3>
+                <p>We guarantee that your website will meet industry standards, thus preventing you from being sued or hacked.</p>
+            </div>
+            <div class="reason">
+                <img src="{% static 'images/communication.svg' %}" alt="">
+                <h3>Communication matters to Us</h3>
+                <p>you will have a dedicated portal to see the progress of the work, and not be left in the dark. Simple terms, no technical jargon!</p>
+            </div>
+            <div class="reason">
+                <img src="{% static 'images/design.svg' %}" alt="">
+                <h3>Simple designs with a specific goal</h3>
+                <p>We design your website to solve your problem, not to win awards. YOU FIRST!</p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- why us section end -->
+    <!-- process section start -->
+    <section class="process">
+        <div>
+            <h2 class="processtitle">Our process</h2>
+        </div>
+        <div class="process-container">
+            <div class="process-child1">
+                <h3>Discovery Call</h3>
+                <p>We'll start with a 20-minute call to talk about your business and your website goals.</p>
+            </div>
+            <div class="process-child21">
+                <h3>Strategy</h3>
+                <p>We will work with you to determine how the website will solve your problem and study your target audience.</p>
+            </div>
+            <div class="process-child21">
+                <h3>Design</h3>
+                <p>We will design the website according to what solves your problem, making it aesthetically pleasing at the same time.</p>
+            </div>
+            <div class="process-child1">
+                <h3>Developpement</h3>
+                <p>We will develop your website with the appropriate technology that fits your use case.</p>
+            </div>
+            <div class="process-child2">
+                <h3>Launch</h3>
+                <p>After the development and testing, we will launch your website, giving you all the support you need to use it (videos, guides)</p>
+            </div>
+            <div class="process-child2 call">
+                <h3>Free Consultation</h3>
+                <p>Book a 20-minute call to talk about your business and your website goals, and see if we can help.</p>
+                <a class="consultation" href="" class="consultation" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marouan-kaboul/consultation-call'});return false;"> Appel Consultation de 20 minutes</a>
+            </div>
+        </div>
+    </section>
+    <!-- process section end-->
+    <!-- reminder that i need to make this section dinamic -->
+    <!-- testimony section start-->
+
+    <section class="testimonials">
+        <div class="testimony-title">
+            <h2>Testimonials</h2>
+        </div>
+        <div class="onebyone">
+            <div class="testimony">
+                <p>Very very good professional work and a very satisfactory result with a lot of flexibility on our different requests. The site is excellent and so is the exceptional work of Marouane. Highly recommended!!</p>
+                <div class="name-testimony">
+                    <h4 class="name">Raghib</h4>
+                    <h5 class="company">Valorapack</h5>
+                </div>
+            </div>
+            <div class="testimony">
+                <p>I had the opportunity to collaborate with Marouane for the creation and launch of my company's website, and I was impressed by her commitment, her attention to detail and her ability to solve problems throughout the mission.</p>
+                <div class="name-testimony">
+                    <h4 class="name">Fayssal</h4>
+                    <h5 class="company">CagpInvest</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing section start -->
+
+    <section id="pricingsection">
+
+        <div class="titlepricing">
+            <h2>Price</h2>
+        </div>
+        <div class="blockprice">
+            <!-- lwla  -->
+            <div class="contentprice1">
+                <h3>Startup Package</h3>
+                <p class="ideal">Ideal for startups that need to have a landing page for an MVP as quickly as possible.</p>
+                <p class="price-mad">3000MAD</p>
+                <p class="tag">2 - 5 Days</p>
+                <hr class="line">
+                <div class="checkpricewhole">
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Ideation & Concept</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Wireframes (UX)</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>UI design based on the "brand guidelines"</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Developpement</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Lead Magnet capture</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>integration of analytical tools</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Tracking tools (FB,...)</p>
+                    </div>
+                </div>
+                <div class="calltoprice">
+                <a class="consltation" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marouan-kaboul/consultation-call'});return false;"> Build My Landing-Page</a>
+
+                </div>
+            </div>
+            <!-- tanya  -->
+            <div class="contentprice">
+                <h3>Custom Web Design</h3>
+                <p class="ideal">Ideal for companies that want showcase sites or more complex sites.</p>
+                <p class="price-mad">Get a quote</p>
+                <p class="tag">4 - 8 Weeks</p>
+                <hr class="line">
+                <div class="checkpricewhole">
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Pages based on the size of the project</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>2 Hour Strategy Meeting</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Website Strategy & Design Direction PDF</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Website layout in Figma</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Website creation on the platform of your choice</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>SEO, Mobile optimisation, Accessibility</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p>Website Launch</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p> <b>Bonus :</b> Workshops & Videos to manage the site efficiently.</p>
+                    </div>
+                    <div class="checkprice">
+                        <img src="{% static 'images/checkc.svg' %}" alt="check mark">
+                        <p> <b>Bonus :</b> Basic Automations: Form, Appointement Scheduling...</p>
+                    </div>
+                    
+                </div>
+                <div class="calltoprice">
+                <a class="consltation" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marouan-kaboul/consultation-call'});return false;"> Build My Website</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing section end -->
+    
+    <!-- faq section start-->
+    <section class="faq">
+        <h2>FAQ</h2>
+        <div class="flexfaqE">
+            <div class="faq1">
+                <div class="question">
+                    <h3>Do you offer ongoing maintenance and support after the launch of the website?</h3>
+                </div>
+                <div class="answer">
+                    <p>Yes, we have a 15-day continuous bugfix support where we fix all the problems that arise during this period.</p>
+                </div>
+            </div>
+            <div class="faq1">
+                <div class="question">
+                    <h3>Are there any additional costs for post-launch support?</h3>
+                </div>
+                <div class="answer">
+                    <p>No. For the first 15 days there is no charge, after that, if you want us to maintain your website, we can discuss it in a call.</p>
+                </div>
+            </div>
+            <div class="faq1">
+                <div class="question">
+                    <h3>How much flexibility do we have to customize the design according to our brand and our specific needs?</h3>
+                </div>
+                <div class="answer">
+                    <p>it's flexible, we design the website according to the brand guidelines and your specific needs.</p>
+                </div>
+            </div>
+            <div class="faq1">
+                <div class="question">
+                    <h3>Can you integrate third-party tools or platforms on the website?</h3>
+                </div>
+                <div class="answer">
+                    <p>Yes, we integrate the necessary third-party tools or platforms on your website.</p>
+                </div>
+            </div>
+            <div class="faq1">
+                <div class="question">
+                    <h3>Who will own the rights to the design and content of the website?</h3>
+                </div>
+                <div class="answer">
+                    <p>After receiving the last payment and launching the website, we transfer all rights to you.</p>
+                </div>
+            </div>
+            <div class="faq1">
+                <div class="question">
+                    <h3>What services are included in the indicated price?</h3>
+                </div>
+                <div class="answer">
+                    <p>There are two services, the first is design and the second is development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- faq section end-->
+
+    <!-- footer section start-->
+    <footer class="footer">
+        <div class="element-top">
+            <a href="{% url 'index' %}" aria-label="page d'Accueil lien"><img src="{% static 'images/logo.svg' %}" alt="logo"></a>
+            <div class="links">
+                <a aria-label="linkedin lien" href="https://www.linkedin.com/in/marouan-kaboul/" target="_blank">Linkedin</a>
+                <a aria-label="tiktok lien" href="https://www.tiktok.com/@marouan.pat?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a>
+            </div>
+            <div class="icons-social">
+                <a aria-label="linkedin lien" href="https://www.linkedin.com/in/marouan-kaboul/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a aria-label="tiktok lien" href="https://www.tiktok.com/@marouan.pat?is_from_webapp=1&sender_device=pc" target="_blank"><img src="{% static '/images/tiktok-icon.svg'%}" alt="tiktok icon"></a>
+                
+            </div>
+        </div>
+        <div>
+            <hr class="lineS">
+        </div>
+        <div class="rights">
+            <p>© 2024 All right reserved. Founded by Marouan Kaboul</p>
+        </div>
+    </footer>
+
+    <script defer src="{% static '/js/app.js' %}"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</body>
+</html>
